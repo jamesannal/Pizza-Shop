@@ -1,0 +1,33 @@
+<link rel="stylesheet" href="/style.css">
+
+
+<h1>Order a pizza</h1>
+
+<form action="/pizzas" method="post">
+  <label>
+  First name:
+  <input type="text" name="first_name">
+  </label>
+
+  <label>
+  Last name:
+  <input type="text" name="last_name">
+  </label>
+
+  <label>
+  Select a pizza:
+    <select name="topping">
+    <option value="Ham">Ham</option>
+    <option value="Veggie">Veggie</option>
+    <option value="BBQ">BBQ</option>
+    </select>
+  </label>
+
+  <label>
+  Quantity:
+  <input type="number" name="quantity">
+  </label>
+
+  <input type ="submit" value="Order Pizza"/>
+
+</form>

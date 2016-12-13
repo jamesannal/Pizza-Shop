@@ -1,0 +1,15 @@
+<link rel="stylesheet" href="/style.css">
+
+<h1>Pizza Order</h1>
+
+<p>First name: <%= @pizza.first_name() %></p>
+<p>Last name: <%= @pizza.last_name() %></p>
+<p>Quantity: <%= @pizza.quantity() %></p>
+<p>Topping: <%= @pizza.topping() %></p>
+
+<a href="/pizzas/<%= @pizza.id %>/edit">EDIT ORDER</a>
+
+<form action="/pizzas/<%= @pizza.id %>/delete" method="post">
+  <input type="submit" value="Delete"/>
+</form>
+

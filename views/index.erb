@@ -1,0 +1,12 @@
+<h1> Pizza Orders </h1>
+<p><a href="/pizzas/new">New Pizza</a></p>
+
+<link rel="stylesheet" href="/style.css">
+
+<% for pizza in @pizzas %>
+<p>Name: <%= pizza.pretty_name %></p> <!-- the = sign means it will be printed to screen. without it will run in background -->
+<p>Order: <%= pizza.quantity %> x <%= pizza.topping%> </p>
+<p><a href="/pizzas/<%= pizza.id %>">Show Pizza</a></p>
+<!-- puts the id of the pizza asked for in the url -->
+<hr> <!-- horizontal rule = stright line across screen -->
+<% end %>
